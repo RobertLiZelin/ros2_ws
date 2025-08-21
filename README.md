@@ -12,8 +12,10 @@ Before running the cleaning robot, make sure a valid map is available on the `/m
 
 Launch LawnBot project （https://github.com/ramyabdulwahed/lawnbot） to explore the environment and build a map. Verify that the /map topic is being published:
 
+```bash
 ros2 topic list
 ros2 topic echo /map
+```
 
 If no /map topic is found, the node will automatically fall back to a simulated map (randomly generated) for testing purposes.
 
