@@ -6,6 +6,17 @@ A ROS 2 Jazzy-based coverage and weeding demo robot. This README provides a qui
 
 ---
 
+## 0) Map setup (SLAM / exploration)
+
+Before running the cleaning robot, make sure a valid map is available on the `/map` topic:
+
+Launch LawnBot project （https://github.com/ramyabdulwahed/lawnbot） to explore the environment and build a map. Verify that the /map topic is being published:
+
+ros2 topic list
+ros2 topic echo /map
+
+If no /map topic is found, the node will automatically fall back to a simulated map (randomly generated) for testing purposes.
+
 ## 1) Quick Start (build & run)
 
 ```bash
